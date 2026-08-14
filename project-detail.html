@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My Project Hub — Project Detail</title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="site-header__logo">My Project Hub</a>
+    <a href="projects.html" class="site-header__back">← Projects</a>
+  </header>
+
+  <main class="detail-page">
+    <div class="detail-hero">
+      <div class="detail-hero__meta">
+        <span class="status-badge status-badge--progress">진행중</span>
+        <span class="detail-hero__period">2025.10 – 진행중</span>
+      </div>
+      <h1 class="detail-hero__title">My Project Hub</h1>
+      <p class="detail-hero__desc">
+        채용 담당자와 면접관이 짧은 시간 안에 프로젝트 경험을 파악할 수 있도록 만든
+        다크 &amp; 퍼플 톤의 개인 포트폴리오 웹사이트
+      </p>
+      <div class="detail-hero__tags">
+        <span class="tag">HTML/CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Canvas API</span>
+      </div>
+      <p class="detail-hero__role">개인 프로젝트 · 기획 · 디자인 · 개발</p>
+      <div class="detail-hero__links">
+        <a href="#" class="detail-link detail-link--primary">Live Demo</a>
+        <a href="#" class="detail-link">GitHub</a>
+      </div>
+    </div>
+
+    <section class="detail-section">
+      <h2 class="detail-section__title">배경 및 문제 정의</h2>
+      <p class="detail-section__body">
+        여러 프로젝트를 진행했지만 각기 다른 저장소와 포맷에 흩어져 있어, 채용 담당자에게
+        일관된 인상을 주기 어려웠습니다. "프로젝트 성격이 달라도 하나의 완성도 있는
+        포트폴리오처럼 보이게 하자"는 목표로 통일된 비주얼 언어를 가진 허브 페이지를
+        기획하게 되었습니다.
+      </p>
+    </section>
+
+    <section class="detail-section">
+      <h2 class="detail-section__title">주요 기능</h2>
+      <ul class="feature-list">
+        <li><strong>인트로 페이지</strong> — 밤하늘 파티클 애니메이션과 Enter 버튼으로 첫인상을 전달</li>
+        <li><strong>프로젝트 리스트</strong> — 3열 카드 그리드, hover 시 퍼플 오버레이 인터랙션</li>
+        <li><strong>프로젝트 상세</strong> — 배경/기능/트러블슈팅/회고를 세로 스크롤로 몰입감 있게 구성</li>
+      </ul>
+    </section>
+
+    <section class="detail-section">
+      <h2 class="detail-section__title">기술 스택 &amp; 아키텍처</h2>
+      <p class="detail-section__body">
+        별도 빌드 도구 없이 정적 HTML/CSS/JS로 구현했습니다. 파티클 배경은 Canvas API로
+        직접 그렸고, 스크린샷 섹션은 IntersectionObserver로 스크롤 진입 시 페이드인되도록
+        처리했습니다.
+      </p>
+      <div class="stack-group">
+        <div class="stack-group__label">Frontend</div>
+        <div class="stack-group__tags">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">Vanilla JS</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <div class="stack-group__label">Deploy</div>
+        <div class="stack-group__tags">
+          <span class="tag">GitHub Pages</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section">
+      <h2 class="detail-section__title">담당 역할</h2>
+      <p class="detail-section__body">
+        기획, 디자인 시스템 정의(컬러/타이포/레이아웃), 퍼블리싱, 인터랙션 구현까지
+        전 과정을 혼자 진행했습니다.
+      </p>
+    </section>
+
+    <section class="detail-section">
+      <h2 class="detail-section__title">트러블슈팅</h2>
+      <div class="trouble-item">
+        <div class="trouble-item__title">파티클 애니메이션이 텍스트 가독성을 해치는 문제</div>
+        <div class="trouble-item__body">
+          초기에는 파티클 밀도가 높고 밝기가 강해 타이틀 텍스트와 겹칠 때 가독성이
+          떨어졌습니다. 파티클 개수를 화면 면적 기준으로 줄이고, 투명도를 낮춰 은은한
+          느낌으로 조정해 해결했습니다.
+        </div>
+      </div>
+      <div class="trouble-item">
+        <div class="trouble-item__title">인트로 페이지 전용 스타일이 다른 페이지에 영향을 준 문제</div>
+        <div class="trouble-item__body">
+          인트로 페이지의 <code>overflow: hidden</code> 설정이 스타일시트를 공유하는
+          리스트/상세 페이지에도 적용되어 스크롤이 막히는 문제가 있었습니다.
+          해당 스타일을 <code>.intro-page</code> 클래스로 분리해 인트로 페이지에만
+          적용되도록 수정했습니다.
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section detail-section--screenshots">
+      <h2 class="detail-section__title">스크린샷</h2>
+      <div class="screenshot-list">
+        <div class="screenshot reveal" style="--thumb-a:#2f2350; --thumb-b:#15121f;">인트로 페이지</div>
+        <div class="screenshot reveal" style="--thumb-a:#1f2a4a; --thumb-b:#12121c;">프로젝트 리스트 페이지</div>
+        <div class="screenshot reveal" style="--thumb-a:#3a2340; --thumb-b:#15121f;">프로젝트 상세 페이지</div>
+      </div>
+    </section>
+
+    <section class="detail-section">
+      <h2 class="detail-section__title">배운 점 &amp; 회고</h2>
+      <p class="detail-section__body">
+        디자인 문서(컬러 팔레트, 타이포그래피, 인터랙션 규칙)를 먼저 정리해두니
+        페이지가 늘어나도 톤을 흔들리지 않고 유지할 수 있었습니다. 다음에는
+        프로젝트 데이터를 JSON으로 분리해 카드/상세 페이지를 동적으로 렌더링하는
+        방식을 시도해보고 싶습니다.
+      </p>
+    </section>
+
+    <div class="detail-footer-nav">
+      <a href="projects.html" class="enter-btn" style="animation:none; opacity:1;">
+        <span>목록으로</span>
+      </a>
+    </div>
+  </main>
+
+  <script src="detail.js"></script>
+</body>
+</html>

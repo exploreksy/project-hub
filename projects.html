@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Projects — My Project Hub</title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <canvas id="particles"></canvas>
+
+  <header class="site-header">
+    <a href="index.html" class="site-header__logo">My Project Hub</a>
+    <span class="site-header__nav-hint">Projects</span>
+  </header>
+
+  <main class="projects-page">
+    <h1 class="projects-page__heading">Projects</h1>
+    <p class="projects-page__subheading">
+      직접 기획하고 만든 프로젝트들입니다. 카드를 클릭하면 배경, 기능, 트러블슈팅 과정을 자세히 볼 수 있어요.
+    </p>
+
+    <div class="project-grid">
+      <a href="project-detail.html?id=1" class="project-card">
+        <div class="project-card__thumb" style="--thumb-a:#2f2350; --thumb-b:#15121f;">
+          <div class="project-card__overlay"></div>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__meta-top">
+            <span class="status-badge status-badge--progress">진행중</span>
+            <span class="project-card__period">2025.10 – 진행중</span>
+          </div>
+          <h3 class="project-card__title">My Project Hub</h3>
+          <p class="project-card__desc">개인 프로젝트를 소개하는 다크 & 퍼플 톤의 포트폴리오 웹사이트</p>
+          <div class="project-card__tags">
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <p class="project-card__role">개인 프로젝트 · 기획 · 디자인 · 개발</p>
+        </div>
+      </a>
+
+      <a href="project-detail.html?id=2" class="project-card">
+        <div class="project-card__thumb" style="--thumb-a:#1f2a4a; --thumb-b:#12121c;">
+          <div class="project-card__overlay"></div>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__meta-top">
+            <span class="status-badge">완료</span>
+            <span class="project-card__period">2025.05 – 2025.07</span>
+          </div>
+          <h3 class="project-card__title">Project Two</h3>
+          <p class="project-card__desc">프로젝트에 대한 한 줄 소개가 이 자리에 들어갑니다</p>
+          <div class="project-card__tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+          </div>
+          <p class="project-card__role">팀 프로젝트 · 프론트엔드 개발</p>
+        </div>
+      </a>
+
+      <a href="project-detail.html?id=3" class="project-card">
+        <div class="project-card__thumb" style="--thumb-a:#3a2340; --thumb-b:#15121f;">
+          <div class="project-card__overlay"></div>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__meta-top">
+            <span class="status-badge">완료</span>
+            <span class="project-card__period">2025.01 – 2025.03</span>
+          </div>
+          <h3 class="project-card__title">Project Three</h3>
+          <p class="project-card__desc">프로젝트에 대한 한 줄 소개가 이 자리에 들어갑니다</p>
+          <div class="project-card__tags">
+            <span class="tag">Python</span>
+            <span class="tag">FastAPI</span>
+          </div>
+          <p class="project-card__role">개인 프로젝트 · 백엔드 개발</p>
+        </div>
+      </a>
+
+      <a href="project-detail.html?id=4" class="project-card">
+        <div class="project-card__thumb" style="--thumb-a:#22314f; --thumb-b:#12121c;">
+          <div class="project-card__overlay"></div>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__meta-top">
+            <span class="status-badge">완료</span>
+            <span class="project-card__period">2024.09 – 2024.12</span>
+          </div>
+          <h3 class="project-card__title">Project Four</h3>
+          <p class="project-card__desc">프로젝트에 대한 한 줄 소개가 이 자리에 들어갑니다</p>
+          <div class="project-card__tags">
+            <span class="tag">Next.js</span>
+            <span class="tag">TypeScript</span>
+          </div>
+          <p class="project-card__role">팀 프로젝트 · 풀스택 개발</p>
+        </div>
+      </a>
+
+      <a href="project-detail.html?id=5" class="project-card">
+        <div class="project-card__thumb" style="--thumb-a:#332048; --thumb-b:#15121f;">
+          <div class="project-card__overlay"></div>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__meta-top">
+            <span class="status-badge">완료</span>
+            <span class="project-card__period">2024.05 – 2024.08</span>
+          </div>
+          <h3 class="project-card__title">Project Five</h3>
+          <p class="project-card__desc">프로젝트에 대한 한 줄 소개가 이 자리에 들어갑니다</p>
+          <div class="project-card__tags">
+            <span class="tag">Vue</span>
+            <span class="tag">Firebase</span>
+          </div>
+          <p class="project-card__role">개인 프로젝트 · 프론트엔드 개발</p>
+        </div>
+      </a>
+
+      <a href="project-detail.html?id=6" class="project-card">
+        <div class="project-card__thumb" style="--thumb-a:#1e2b3f; --thumb-b:#12121c;">
+          <div class="project-card__overlay"></div>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__meta-top">
+            <span class="status-badge">완료</span>
+            <span class="project-card__period">2024.01 – 2024.04</span>
+          </div>
+          <h3 class="project-card__title">Project Six</h3>
+          <p class="project-card__desc">프로젝트에 대한 한 줄 소개가 이 자리에 들어갑니다</p>
+          <div class="project-card__tags">
+            <span class="tag">Java</span>
+            <span class="tag">Spring</span>
+          </div>
+          <p class="project-card__role">팀 프로젝트 · 백엔드 개발</p>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
